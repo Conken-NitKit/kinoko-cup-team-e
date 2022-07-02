@@ -1,4 +1,3 @@
-/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,19 +7,18 @@ using DG.Tweening;
 /// <summary>
 /// リザルト画面の最終スコアの発表を管理するクラス
 /// </summary>
-public class ResultText : MonoBehaviour
+public class ResultScore : MonoBehaviour
 {
-    [SerializeField]private Player player;
+    /*[SerializeField]private WallAnimation wallAnimation;*/
     [SerializeField]public Text resultText;
 
     private void Start()
     {
-       SetResult(); 
+       /*SetResult();*/ 
     }
     
-    public void SetResult()
+    /*public void SetResult()
     {
-        resultText.text = "スコア " + $"{player.scorecount}" ;
-    }
+        resultText.text = $"{wallAnimation.wallOpenedCount}回" ;
+    }*/
 }
-*/
