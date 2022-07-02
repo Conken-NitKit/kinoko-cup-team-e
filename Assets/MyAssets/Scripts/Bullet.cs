@@ -17,6 +17,6 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        rb2D.velocity = transform.right * BulletSpeed *1;
+        rb2D.velocity = transform.right * BulletSpeed *-1;
     }
 }
