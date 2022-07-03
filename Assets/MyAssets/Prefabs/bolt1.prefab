@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6235050794131240127}
   - component: {fileID: 6235050794131240126}
   - component: {fileID: 6235050794131240125}
+  - component: {fileID: 1406728054850885935}
   m_Layer: 0
   m_Name: bolt1
   m_TagString: Bullet
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 6235050794131240124}
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -164,4 +165,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8142cf503dda29e43ae37c91ae2aa266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletSpeed: -1
+  BulletSpeed: -4
+--- !u!114 &1406728054850885935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235050794131240124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba40c07db8719584daab158a8818bd70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet_object: {fileID: 6235050794131240124}

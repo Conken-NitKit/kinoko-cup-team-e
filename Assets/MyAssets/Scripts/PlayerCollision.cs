@@ -47,7 +47,7 @@ public class PlayerCollision : MonoBehaviour
 
         void ChangeScene()
         {
-            SceneManager.LoadScene("Gameover",LoadSceneMode.Single);
+            SceneManager.LoadScene("GameOverB",LoadSceneMode.Single);
         }
     }
 }

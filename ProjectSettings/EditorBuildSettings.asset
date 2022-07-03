@@ -5,25 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/MyAssets/Scenes/Satou.unity
     guid: 91a528d1c36dcf443a2db79914b2f3d9
   - enabled: 1
-    path: Assets/MyAssets/Scenes/Title.unity
-    guid: 8524aa4327f4be14785612230d454309
-  - enabled: 1
-    path: Assets/MyAssets/Scenes/Main.unity
-    guid: 70bd9f6ad35aad2419b6efd6c97f75d5
-  - enabled: 1
     path: Assets/MyAssets/Scenes/Minami.unity
     guid: cf12d98208dd2364ea88f737372e3e01
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/MyAssets/Scenes/GameOverB.unity
+    guid: 830ea288102ffd94f88eb5cf2ab49862
   m_configObjects: {}

@@ -10,10 +10,18 @@ public class ScoreCounter : MonoBehaviour
     [SerializeField]
     private int PlusScore;
 
+    [SerializeField]
+    private int EnemyLife;
+
+    int count = 0;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Bullet"))
         {
+            count += 1;
+            if(count >= EnemyLife)
+            Destroy(this.gameObject);
             Score += PlusScore;
         }
     }
