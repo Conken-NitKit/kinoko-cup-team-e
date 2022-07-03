@@ -8,10 +8,13 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private float playerSpeed = 5f;
+    private float playerSpeed = 6f;
 
     [SerializeField]
-    private float playerSlowSpeed = 2.5f;
+    private float playerSlowSpeed = 3f;
+
+    [SerializeField]
+    private GameObject Bullet;
 
     float playerNowSpeed;
 
@@ -19,10 +22,11 @@ public class Player : MonoBehaviour
     {
         MovePlayer();
         MoveSlowPlayer();
+        Fire();
     }
 
     /// <summary>
-    /// プレイヤーの上下移動
+    /// プレイヤーの移動
     /// </summary>
     void MovePlayer()
     {
@@ -73,6 +77,15 @@ public class Player : MonoBehaviour
     void MoveSlowPlayer()
     {
         playerNowSpeed = (Input.GetKey(KeyCode.LeftShift)) ? playerSlowSpeed : playerSpeed;
+    }
+
+    void Fire()
+    {
+        
+        if(Input.GetKey(KeyCode.Space))
+        {
+            Instantiate(Bullet,this.transform.position,this.transform.rotation * Bullet.transform.rotation);
+        }
     }
 
 }
