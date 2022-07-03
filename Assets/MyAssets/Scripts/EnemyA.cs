@@ -11,16 +11,12 @@ public class EnemyA : MonoBehaviour
     public Transform Player;
     [SerializeField] private Rigidbody2D rb2D;
     [SerializeField] private float targetVelocity;
-
-    void Start()
-    {
-
-    }
-
+    
     void Update()
     { 
         rb2D.AddForce((GameObject.FindWithTag("Player").transform.position - this.transform.position).normalized * move_speed, ForceMode2D.Force);
     }
+
 }
    /* private GameObject player;
     public float move_speed;

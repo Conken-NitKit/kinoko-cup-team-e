@@ -8,15 +8,19 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private Rigidbody2D rb2D ;
+    [SerializeField]
+    private GameObject Bullet_object;
+    private Rigidbody2D rb2D;
     public float BulletSpeed; 
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        Destroy(Bullet_object,3f);
     }
 
     void Update()
     {
         rb2D.velocity = transform.right * BulletSpeed *1;
     }
+
 }

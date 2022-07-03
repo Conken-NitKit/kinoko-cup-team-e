@@ -14,6 +14,6 @@ public class ScoreManager : MonoBehaviour
     {
         int Score = ScoreCounter.GetScore();
         Text Score_text = ScorePrint.GetComponent<Text>();
-        Score_text.text = "スコア:" + Score;
+        Score_text.text = "スコア " + Score;
     }
 }
