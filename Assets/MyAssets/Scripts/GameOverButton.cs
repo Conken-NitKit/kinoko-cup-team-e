@@ -18,7 +18,7 @@ public class GameOverButton : MonoBehaviour
     {
         Time.timeScale = 1f;
         transform.DOScale(1.1f,0.5f).SetEase(Ease.OutElastic)
-        .OnComplete(() => transform.DOScale(1f,0.5f)).OnComplete(() => SceneManager.LoadScene("Title"));    
+        .OnComplete(() => transform.DOScale(1f,0.5f)).OnComplete(() => SceneManager.LoadScene("Satou"));    
     }
     
 }
